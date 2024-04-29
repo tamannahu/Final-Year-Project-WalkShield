@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "678435346541",
+    "project_id": "signuppract",
+    "storage_bucket": "signuppract.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678435346541:android:898e5e665306b88fbc4764",
+        "android_client_info": {
+          "package_name": "com.example.signuppract"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh0Uv0_e7d2WU_-UXKA9T7H-rWnib7w9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

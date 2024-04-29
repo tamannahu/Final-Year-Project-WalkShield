@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".Messages">
+
+    <View
+        android:id="@+id/messagesroundedSquare"
+        android:layout_width="360dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/friendsroundedsquare"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:text="Community"
+        android:textColor="@color/pink"
+        android:textSize="34dp"
+        app:layout_constraintRight_toLeftOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/messagesroundedSquare"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="53dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="116dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="50dp"
+        android:elevation="10dp"
+        android:src="@drawable/friendsicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/roundedtab"
+        android:layout_width="360dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/roundedtab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/messagesroundedSquare"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="360dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="203dp"
+        app:layout_constraintStart_toStartOf="@+id/roundedtab"
+        app:layout_constraintEnd_toEndOf="@+id/roundedtab"
+        app:layout_constraintTop_toTopOf="@+id/roundedtab"
+        app:layout_constraintBottom_toBottomOf="@+id/roundedtab"
+        android:id="@+id/recyclerView3"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showBottomSheet"
+        app:layout_constraintBottom_toBottomOf="@id/roundedtab"
+        app:layout_constraintEnd_toEndOf="@id/roundedtab"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="+"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/pink"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

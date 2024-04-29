@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-30dp"
+
+        app:cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:background="@color/pink">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Friend Request"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/edittext_border"
+                android:textColor="@color/black"
+                android:hint="Enter Email Address"
+                android:textColorHint="@color/pink"
+                android:textSize="25sp"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/emailInput"
+
+                />
+
+            <Button
+                android:id="@+id/sendRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="160dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/white"
+                android:text="Send Request"
+                android:textColor="@color/pink"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

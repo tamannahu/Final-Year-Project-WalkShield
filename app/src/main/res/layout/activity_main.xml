@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hold down to call Emergency Services"
+        android:textColor="@color/pink"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@id/SOSButton"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="15dp"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Start your Journey!"
+        android:textColor="@color/pink"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/followMeButton"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See your Friends!"
+        android:textColor="@color/pink"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/friendsButton"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Community and Resources"
+        android:textSize="22sp"
+        android:textColor="@color/pink"
+        app:layout_constraintBottom_toTopOf="@id/seeMessages"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        />
+
+    <Button
+        android:id="@+id/followMeButton"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="@color/pink"
+        android:text="Follow Me"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/support"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="@color/pink"
+        android:text="Support"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seeMessages" />
+
+    <Button
+        android:id="@+id/friendsButton"
+        android:layout_width="229dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/pink"
+        android:text="Friends"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/followMeButton" />
+
+    <Button
+        android:id="@+id/seeMapButton"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="@color/pink"
+
+        android:text="Map"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/followMeButton" />
+
+    <Button
+        android:id="@+id/seeMessages"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="@color/pink"
+        android:text="Community"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seeMapButton" />
+
+
+    <com.example.signuppract.SOSButton
+        android:id="@+id/SOSButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/sos_background"
+        android:text="SOS"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/followMeButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="780dp"
+        android:backgroundTint="@color/pink"
+        android:text="logout"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:elevation="4dp"
+        />
+    <View
+        android:id="@+id/pinkRectangle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/pinkrectanglebot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:elevation="-1dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".FriendsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:text="Friends"
+        android:textColor="@color/pink"
+        android:textSize="34dp"
+        app:layout_constraintRight_toLeftOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/friendsroundedSquare"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="53dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="116dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="50dp"
+        android:elevation="10dp"
+        android:src="@drawable/friendsicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/friendsroundedSquare"
+        android:layout_width="360dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/friendsroundedsquare"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/seeRequestsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See Requests"
+        android:textColor="@color/pink"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friendsroundedSquare" />
+
+    <View
+        android:id="@+id/roundedtab"
+        android:layout_width="360dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/roundedtab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seeRequestsButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/addFriendsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="80dp"
+        android:backgroundTint="@color/white"
+        android:onClick="showBottomSheet"
+        android:text="Add Friends"
+        android:textColor="@color/pink"
+        app:layout_constraintRight_toLeftOf="@+id/seeRequestsButton"
+        app:layout_constraintTop_toBottomOf="@id/friendsroundedSquare" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="360dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="203dp"
+        app:layout_constraintStart_toStartOf="@+id/roundedtab"
+        app:layout_constraintEnd_toEndOf="@+id/roundedtab"
+        app:layout_constraintTop_toTopOf="@+id/roundedtab"
+        app:layout_constraintBottom_toBottomOf="@+id/roundedtab"
+        android:id="@+id/recyclerView2"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

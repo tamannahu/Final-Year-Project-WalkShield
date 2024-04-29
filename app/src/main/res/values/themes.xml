@@ -1,0 +1,18 @@
+
+<!--
+   The themes.xml file in Android Studio is used to define
+   styles and themes for your Android application.
+   It allows you to customize the visual appearance of your app, including colors,
+    fonts, and other UI elements
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SignupPract" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="android:statusBarColor">@color/blue</item>
+    </style>
+
+    <style name="Theme.SignupPract" parent="Base.Theme.SignupPract" />
+</resources>
